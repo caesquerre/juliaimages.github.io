@@ -89,7 +89,7 @@ mosaicview(img_opening, img_opening1, img_opening2; nrow = 1)
 img_closing = @. Gray(1 * img > 0.5);
 img_closing1 = closing(img_closing)
 img_closing2 = closing(closing(img_closing))
-mosaicview(img_closing1, img_closing1, img_closing2; nrow = 1)
+mosaicview(img_closing, img_closing1, img_closing2; nrow = 1)
 
 # ## Tophat
 
